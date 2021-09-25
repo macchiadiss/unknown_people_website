@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tempo</title>
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link rel="stylesheet" href="style.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+
+ </head>
+ <body>
+
+ <div class="header">
+  <div class="logo">
+    <img src="logo.png" width="60" height="60" alt="">
+  </div>
+  <div class="nome">
+    TEMPO
+    </div>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Abbonamenti.html">Abbonamenti</a></li>
+    <li><a href="">Comandi</a></li>
+    <li><a href="">Coming Soon</a></li>
+
+  </ul>
+
+  <div class="cta">
+    <a href="contatti.html" class="button"> Contatti</a>
+  </div>
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+ </div>
+
+ <div class="hero hero--small">
+  <div class="hero__abbo">
+    <h1 class="big-text">CHE COS'È?</h1>
+  </div>
+ </div>
+
+
+ <p>Gli antichi giganti Groovy e Rythm sono caduti, e ora cosa fare?<br>
+ A quanto pare YouTube ha deciso di andare alla caccia di tutti i bot della musica che utilizzano le loro API.</p>
+
+ <p>Ma nessun problema! Tempo è qui per pararvi il culo in tutto e per tutto. Con un singolo bot sarai in grado di ascoltare la migliore musica in alta qualità (o almeno quella che il canale e la tua connessione permettono) senza timori che il tuo bot possa essere annichilito da YouTube.</p>
+
+ <p>"Si ma io non ho un server, testa di cazzo, cosa ci faccio?" è quello che ti potresti stare chiedendo.<br>
+ Non temere anche stavolta perchè questo bot può essere utilizzato (anzi è consigliabilmente da utilizzare con) user-token, ossia account utente!<br>
+ Eh si, puoi prendere il tuo schifoso secondo account e buttarlo all'interno di Tempo per utilizzarlo come bot per la musica (o altro ;D) dove vuoi, senza dover chiedere il permesso a nessuno.</p>
+
+ <p>Tempo user-bot è provvisto di una comoda whitelist che ti permette di selezionare chi effettivamente ha il permesso di usare il tuo bot! (con un bot-token invece esiste il dj-role ovviamente)<br>
+ E come se non bastasse, per far vedere a tutti quanto ce l'hai grosso, esiste una sezione di comandi dedicati che solo l'owner del bot può utilizzare.</p>
+
+ <p>Probabilmente starai pensando "Ma se ci sono un milione di bot della musica pubblici perchè dovrei pagare per sta cazzata?"<br>
+ Beh, sarò onesto con te, questo bot è progettato per rompere il cazzo.<br>
+ Hai un amico che ti implode i timpani con le soundboard? Inserisci il command follow seguito dal sui id, e verrà seguito dal bot ovunque, ovviamente con canzone di tua scelta in loop.<br>
+ Quei falliti dei moderatori del tuo server discord preferito disconnettono il tuo bot? Dai il comando camp con l'id della stanza ed il bot ci starà attaccato come io sto attaccato al culo della puttana della madre del creatore di Spotify (ma come cazzo le fai le API?).</p>
+
+ <p>Insomma si hai capito il concetto, puoi farci il cazzo che ti pare con sto bot, e se sei interessato controlla la sezione "Comandi" per vedere tutte le feature.</p>
+
+
+
+
+
+ <footer class="footer mt-1">
+  <div class="grid">
+    <div class="col">
+      <h4 class="normal-text tw">AAA</h4>
+      <p class="tw">ncjwnnnvnvnjwdkcmnken</p>
+    </div>
+    <div class="col">
+      <h4 class="normal-text tw">AAA</h4>
+      <p class="tw">ncjwnnnvnvnjwdkcmnken</p>
+    </div>
+    <div class="col">
+      <h4 class="normal-text tw">AAA</h4>
+      <p class="tw">ncjwnnnvnvnjwdkcmnken</p>
+    </div>
+    <div class="col">
+      <h4 class="normal-text tw">AAA</h4>
+      <p class="tw">ncjwnnnvnvnjwdkcmnken</p>
+    </div>
+  </div>
+ </footer>
+
+ <!-- Jquery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ <script>
+   $( document ).ready(function() {
+
+     /* Open Panel */
+     $( ".hamburger" ).on('click', function() {
+       $(".menu").toggleClass("menu--open");
+     });
+
+   });
+ </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
