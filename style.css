@@ -15,7 +15,7 @@
 
  .intro-text{text-transform: uppercase; font-size: 20px; font-weight: bold;}
 
- .button{padding: 18px 28px; background: #2596be; color: #fff; display: inline-block; border-radius: 4px;}
+ .button, .open-button{padding: 18px 28px; background: #2596be; color: #fff; display: inline-block; border-radius: 4px;}
 
  @media (max-width: 768px) {
    .big-text{font-size: 40px;}
@@ -51,9 +51,7 @@
 
  .hamburger{display: none;}
 
- .cta{
 
- }
 
  @media (max-width: 768px) {
    .cta{display: none;}
@@ -116,6 +114,74 @@
  .tempo__content p,
  .plugin__content p,
  .api__content p{color: #fff;}
+
+/* ! Login */
+
+.login{
+  left: 70%;
+}
+ 
+.form-popup{
+  width: 300px;
+   padding: 40px;
+   position: absolute;
+   left: 80%;
+   transform: translate(-50%, -50%);
+   background: #2596be;
+   text-align: center;
+}
+
+.form-popup input[type="text"], .form-popup input[type="password"]{
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #040b4e;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.form-popup input[type="text"]:focus, .form-popup input[type="password"]:focus{
+ width: 240px;
+ border-color: #2ecc71;
+
+}
+
+.form-popup button[type="submit"]{
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.form-popup button[type="submit"]:hover{
+  background: #2ecc71;
+}
+
+form .forgot-password{margin-left: -8px;}
+
+ form .forgot-password a{
+  color: #add8e6;
+  text-decoration: none;
+ }
+
+ form .forgot-password a:hover{text-decoration: underline;}
+
+ form .signuplink{padding: 20px;}
+ form .signuplink a{text-decoration: none;}
+ form .signuplink a:hover{text-decoration: underline;}
 
 /* ! Tempo */
 
